@@ -1,0 +1,65 @@
+$main: rgb(207, 226, 255);
+$primary: rgb(16, 16, 254);
+$secondary: white;
+$text-color: black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  outline: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  gap: 140px;
+  background-color: $main;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $primary;
+  }
+  p {
+    color: $text-color;
+  }
+}
+section {
+  display: flex;
+  gap: 180px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 40vh;
+    height: 20vh;
+    padding: 24px;
+    border-radius: 14px;
+    background-color: $secondary;
+    box-shadow: 0px 1px 154px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 154px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 154px -10px rgba(0, 0, 0, 0.75);
+    h2 {
+      font-size: 40px;
+      color: $primary;
+    }
+    p {
+      font-size: 20px;
+      color: $text-color;
+    }
+    button {
+      width: 150px;
+      padding: 14px;
+      color: $secondary;
+      background-color: $primary;
+      border: 1px solid $primary;
+      border-radius: 8px;
+    }
+  }
+}
